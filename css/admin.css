@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.main_wrapper {
+    padding: 100px 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+form {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+form h2 {
+    margin: 0 0 20px;
+}
+form .form_preview {
+    width: 100%;
+}
+form .form_preview img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+form label {
+    margin:  0 0 15px;
+}
+form input {
+    width: 100%;
+}
+form input:focus {
+    outline: none;
+}
+form select:focus {
+    outline: none;
+}
+form textarea {
+	width: 100%;
+	resize: vertical;
+}
+.radio_label {
+    display: flex;
+    align-items: center;
+}
+.radio_label input {
+    width: 10px;
+    margin: 0 15px 0 0;
+}

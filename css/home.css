@@ -1,0 +1,351 @@
+
+
+.heading{
+    text-align: center;
+    font-size:4rem;
+    font-family: 'Montserrat', sans-serif;
+    color:#000000;
+    padding: 1rem;
+    margin: 2rem 0;
+    background:#ffe6f0;
+
+}
+.heading span{
+    color:rgb(8, 8, 8);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-text h1{
+    font-family: 'Leckerli One', cursive;
+    font-size:50px;
+    color: var(--other-color);
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.main-text p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+.btn{
+    padding: 20px 35px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.btn:hover{
+    background: var(--other-color);
+}
+
+.center-text h2{
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    color: var(--text-color);
+}
+.flowers .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .flowers .box-container .box{
+        flex: 1 1 30rem;
+        box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+        border: .1rem solid rgba(0,0,0,.1);
+        position:relative
+    }
+    .box-container .box .discount{
+        position: absolute;
+        top: 1rem; left:1rem;
+        padding: 7rem 1rem;
+        font-size: 2rem;
+        color: rgb(226, 100, 174);;
+        background: rgba(255, 51, 153, .05);
+        z-index: 1;
+        border-radius: .5rem;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    .flowers .box-container .box .image{
+        position:relative;
+        text-align: center;
+        padding-top: 2rem;
+        overflow: hidden;
+    }
+    .flowers .box-container .box .image img{
+        height:25rem;
+    }
+    .flowers .box-container .box:hover .image img{
+        transform:scale(1.1);
+    }
+    .flowers .box-container .box .image .icons{
+        position: absolute;
+        bottom:-7rem; left: 0; right: 0;
+        display: flex;
+    }
+    .flowers .box-container .box:hover .image .icons{
+        bottom:0;
+    }
+    .flowers .box-container .box .image .icons a{
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        width: 50%;
+        background:rgb(253, 250, 250);
+        color:#8a8787;
+
+        cursor: pointer;
+    }
+    .flowers .box-container .box .image .icons a._liked {
+        color: var(--main-color);
+    }
+    .flowers .box-container .box .image .icons .cart-btn{
+        border-left: .1rem solid #fff7;
+        border-right: .1rem solid #fff7;
+        width:100%;
+
+        cursor: pointer;
+    }
+    .flowers .box-container .box .image .icons a._incart:hover {
+        color:#fff;
+        background-color: var(--main-color);
+    }
+    .flowers .box-container .box .image .icons a:hover{
+        background:#333;
+    }
+    .flowers .box-container .box .image .icons a._liked:hover{
+        color:#fff;
+        background: var(--main-color);
+    }
+    .flowers .box-container .box .content{
+        padding:2rem;
+        text-align: center;
+    }
+    .flowers .box-container .box .content h3{
+        font-size: 2rem;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .flowers .box-container .box .content p {
+		font-size: 11px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+    .flowers .box-container .box .content .price{
+        font-size: 2.5rem;
+        color: rgb(255, 167, 218);
+        font-weight: bolder;
+        padding-top: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .flowers .box-container .box .content .price span{
+        font-size: 1.5rem;
+        color: #999;
+        font-weight: lighter;
+        text-decoration: line-through;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .heading{
+        text-align: center;
+        font-size: var(--big-font);
+        color:#333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background:rgba(255, 51, 153, .05);
+    }
+ 
+@media (max-width: 640px){
+    :root{
+        --big-font: 3.8rem;
+        --h2-font: 2rem;
+        --p-font: 1.1rem;
+    }
+    .main-text h1{
+        line-height: 1.1;
+    }
+    .main{
+        height: 85vh;
+    }
+
+}
+@media (max-width: 430px){
+    :root{
+        --big-font: 2.8rem;
+        --h2-font: 1rem;
+        --p-font: 1.1rem;
+    }
+    section {
+        padding: 80px 5% 50px;
+    }
+    .main-text h1{
+        line-height: 1.1;
+    }
+    .main{
+        height: 85vh;
+    }
+    
+
+}
+
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5 rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5 rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3 rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+   }
+   .contacts .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .contacts .row .image{
+    flex: 1 1 40rem;
+   }
+   .contacts .row .image img{
+    width: 100%;
+   }
+   .contacts .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .contacts .row form .box:focus{
+    border-color: rgb(255, 152, 212);
+   }
+   .contacts .row form textarea{
+    height: 15rem;
+    resize: nflowers
+   }
+   .gifts .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gifts .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position:relative
+}
+.gifts .box-container .box .image{
+    position:relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.gifts .box-container .box .image img{
+    height:25rem;
+}
+.gifts .box-container .box:hover .image img{
+    transform:scale(1.1);
+}
+.gifts .box-container .box .image .icons{
+    position: absolute;
+    bottom:-7rem; left: 0; right: 0;
+    display: flex;
+}
+.gifts .box-container .box:hover .image .icons{
+    bottom:0;
+}
+.gifts .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background:rgb(253, 250, 250);
+    color:#795959;
+}
+.gifts .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width:100%;
+}
+.gifts .box-container .box .image .icons a:hover{
+    background:#333;
+}
+.gifts .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+.gifts .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+.gifts .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: rgb(255, 167, 218);
+    font-weight: bolder;
+    padding-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.gifts .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
